@@ -11,10 +11,19 @@ function App() {
   return (
     <div>
       <NavBar />
-      <Home />
-      <About />
+      <Home
+        username={user.name}
+        color={user.color}
+        city={user.city}
+      />
+      <About
+      bio={user.bio}
+      links={user.links} 
+      />
     </div>
   );
 }
+
+
 
 export default App;
